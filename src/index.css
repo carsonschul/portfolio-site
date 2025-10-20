@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+html {
+    scroll-padding-top: 5rem;
+    /* equal to your header height */
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+
+.blue-glow {
+    text-shadow: 0 0 10px theme('colors.blue.700');
+}
+
+.gray-glow {
+    text-shadow: 0 0 10px theme('colors.gray.200')
+}
+
+.hover-gray-glow:hover {
+    text-shadow: 0 0 10px theme('colors.gray.200');
+}
+
+nav {
+    pointer-events: none;
+    animation: enableHover 0s linear 10s forwards;
+}
+
+@keyframes enableHover {
+    to {
+        pointer-events: auto;
+    }
+}
