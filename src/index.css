@@ -16,6 +16,14 @@ body {
     text-shadow: 0 0 10px theme('colors.blue.700');
 }
 
+.blue-glow-border {
+    box-shadow: 0 0 10px theme('colors.blue.900')
+}
+
+.gray-glow-border {
+    box-shadow: 0 0 10px theme('colors.gray.200')
+}
+
 .gray-glow {
     text-shadow: 0 0 10px theme('colors.gray.200')
 }
