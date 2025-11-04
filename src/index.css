@@ -42,3 +42,7 @@ nav {
         pointer-events: auto;
     }
 }
+
+.min-h-dynamic {
+    min-height: 100dvh;
+}

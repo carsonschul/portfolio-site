@@ -95,7 +95,7 @@ function App() {
       </motion.header>
       <section
         id="hero"
-        className="min-h-screen flex flex-col gap-6 items-center justify-center text-center tracking-wide">
+        className="min-h-dynamic flex flex-col gap-6 items-center justify-center text-center tracking-wide">
         <motion.h1
           id="hero-title"
           className="text-4xl sm:text-6xl font-bold text-blue-500 blue-glow"
@@ -130,13 +130,13 @@ function App() {
       <div className="h-24 w-full bg-gradient-to-b from-transparent via-blue-950/40 to-transparent" />
       <section
         id="about-me"
-        className="flex flex-col items-center justify-center min-h-screen bg-black scroll-mt-[-50px] px-6"
+        className="flex flex-col items-center bg-black scroll-mt-[55px] sm:py-16 px-6"
       >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+          viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center gap-6"
         >
           <h2
@@ -146,41 +146,29 @@ function App() {
             About Me
           </h2>
 
-          <p className="text-white gray-glow text-md sm:text-lg px-8 sm:px-56 text-center">
+          <p className="text-white gray-glow text-md sm:text-lg text-center px-8 sm:px-56">
             Hi there. Nice to meet you. I’m the About Me section.
             <br /><br />
             Just kidding, I’m Carson.
             <br /><br />
-            I’ve always been a creative person. When I was a kid, I was making dumb
-            skits with my cousins and playing piano nonstop. As I got older, that
-            turned into working as a professional accompanist, acting in theater and
-            short films, and writing my own screenplays.
+            I’ve always been creative — making skits with my cousins, playing piano, acting in theater, and writing screenplays.
             <br /><br />
-            More recently, I got into coding. I started on freeCodeCamp, working
-            through their web design, JavaScript, and React courses. I didn’t have a
-            teacher or mentor—just curiosity and persistence.
+            Then I discovered coding. I started on freeCodeCamp and, within six months, went from “What’s a component?” to building full-stack projects like an Expense Tracker and a Workout Planner with React, Node, and Prisma.
             <br /><br />
-            In less than six months, I went from “What’s a component?” to building
-            full projects. My first was an Expense Tracker where I learned state
-            management, conditional rendering, and the basics of UI/UX. After that, I
-            built a Workout Planner themed after my old high school—a full-stack app
-            with custom React UI, authentication, and a Node/Prisma backend.
-            <br /><br />
-            For me, coding feels like another creative outlet. It’s structure mixed
-            with imagination. And like any good story, I’m just getting started.
+            Coding feels like storytelling — structure mixed with imagination. And like any good story, I’m just getting started.
           </p>
         </motion.div>
       </section>
       <div className="h-24 w-full bg-gradient-to-b from-transparent via-blue-950/40 to-transparent" />
       <section
         id="projects"
-        className="flex flex-col items-center justify-center min-h-screen bg-black gap-6 sm:my-16 px-6"
+        className="flex flex-col items-center justify-center bg-black gap-6 sm:my-16 px-6"
       >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center gap-6"
         >
           <h2
@@ -195,8 +183,8 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border items-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-2xl sm:text-3xl text-center font-semibold text-blue-400 mb-2">
             Workout Planner
@@ -229,7 +217,7 @@ function App() {
             )}
           </p>
           <div className="flex justify-center mb-6">
-            <img src="https://i.imgur.com/zAIYiki.png" className="w-full sm:h-72 rounded-full border-2 border-white brightness-75 gray-glow-border" />
+            <img src="https://i.imgur.com/zAIYiki.png" className="max-h-72 w-auto rounded-full border-2 border-white brightness-75 gray-glow-border" />
           </div>
           <div className="flex gap-4 text-blue-300 justify-center">
             <a href="https://workout-planner-2.netlify.app" target="_blank" className="hover:underline text-md sm:text-lg">
@@ -246,8 +234,8 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border justify-center items-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2">
             Expense Tracker
@@ -279,7 +267,7 @@ function App() {
               </>
             )}
           </p>
-          <img src="https://i.imgur.com/7sLylfu.png" className="w-2/3 sm:h-72 rounded-full mb-6 border-2 border-white brightness-75 gray-glow-border" />
+          <img src="https://i.imgur.com/7sLylfu.png" className="max-h-72 w-auto rounded-full mb-6 border-2 border-white brightness-75 gray-glow-border" />
           <div className="flex gap-4 text-blue-300">
             <a href="https://expense-tracker-prototype.netlify.app" target="_blank" className="hover:underline text-md sm:text-lg">
               Live Demo →
@@ -293,8 +281,8 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border items-center justify-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2">
             This Website
@@ -302,7 +290,7 @@ function App() {
           <p className="text-gray-200 mb-6 leading-relaxed text-md sm:text-lg">
             You're looking at it!
           </p>
-          <img src="https://i.imgur.com/aNEELJA.png" className="rounded-full mb-6 border-2 border-white brightness-75 gray-glow-border h-36 sm:h-72 sm:w-2/3" />
+          <img src="https://i.imgur.com/aNEELJA.png" className="rounded-full mb-6 border-2 border-white brightness-75 gray-glow-border max-h-72 w-auto" />
           <div className="flex gap-4 text-blue-300">
             <a
               href="#"
@@ -327,19 +315,21 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center gap-6"
         >
           <h2 className="text-4xl sm:text-6xl font-bold text-blue-500 blue-glow">
-            Contact
+            What's Next
           </h2>
           <p className="text-gray-300 text-md sm:text-lg max-w-xl gray-glow leading-relaxed">
-            Want to chat, collaborate, or just say hi? I’m always open to new
-            opportunities and creative projects.
+            Right now, I'm beginning work on my own solo indie game, learning 3D modeling, and planning more projects to sharpen my web development skills.
             <br />
             <br />
-            You can reach me directly at{" "}
+            I'm seeking opportunities of all kinds, including contract, part-time, and full-time work.
+            <br />
+            <br />
+            If you're interested in collaborating, you can reach me directly at{" "}
             <a
               href="mailto:schultecarson@gmail.com"
               className="text-blue-400 underline hover:text-blue-300 transition-colors"
@@ -383,8 +373,8 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center justify-center gap-2"
         >
           <p className="text-blue-400 tracking-wide blue-glow text-md sm:text-lg">
