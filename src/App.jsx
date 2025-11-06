@@ -135,7 +135,7 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center gap-6"
         >
@@ -157,6 +157,7 @@ function App() {
             <br /><br />
             Coding feels like storytelling — structure mixed with imagination. And like any good story, I’m just getting started.
           </p>
+          <img src="https://i.imgur.com/zbI7hWN.jpeg" className="h-72 rounded-full gray-glow-border w-auto mt-4" />
         </motion.div>
       </section>
       <div className="h-24 w-full bg-gradient-to-b from-transparent via-blue-950/40 to-transparent" />
@@ -167,7 +168,7 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center gap-6"
         >
@@ -183,7 +184,7 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border items-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-2xl sm:text-3xl text-center font-semibold text-blue-400 mb-2">
@@ -234,7 +235,7 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border justify-center items-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2">
@@ -283,14 +284,14 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border items-center justify-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2">
             NeedGod.net Redesign Concept
           </h3>
-          <p className="text-gray-200 mb-6 leading-relaxed text-md sm:text-lg">
-            A redesign concept I made for NeedGod.net
+          <p className="text-gray-200 mb-6 leading-relaxed text-md sm:text-lg text-center">
+            A redesign concept I made for NeedGod.net. Currently it's just the hero section.
           </p>
           <img src="https://i.imgur.com/06rz0ni.png" className="rounded-full mb-6 border-2 border-white brightness-75 gray-glow-border max-h-72 w-auto" />
           <div className="flex gap-4 text-blue-300">
@@ -308,7 +309,7 @@ function App() {
           className="flex flex-col bg-blue-950/20 border border-blue-900 rounded-2xl p-6 w-full sm:w-1/2 hover:scale-[1.02] transition-transform duration-300 blue-glow-border items-center justify-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ amount: 0.5, once: true }}
         >
           <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2">
@@ -342,7 +343,7 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center gap-6"
         >
@@ -400,7 +401,7 @@ function App() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ amount: 0.5, once: true }}
           className="flex flex-col items-center justify-center gap-2"
         >
