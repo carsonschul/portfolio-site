@@ -287,11 +287,11 @@ function App() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ amount: 0.5, once: true }}
         >
-          <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2">
-            NeedGod.net Redesign Concept
+          <h3 className="text-xl sm:text-3xl font-semibold text-blue-400 mb-2 text-center">
+            NeedGod.net – Unofficial Redesign Concept
           </h3>
           <p className="text-gray-200 mb-6 leading-relaxed text-md sm:text-lg text-center">
-            A redesign concept I made for NeedGod.net. Currently it's just the hero section.
+            A personal redesign concept exploring a modern look for NeedGod.net. This is an independent mockup featuring only the hero section.
           </p>
           <img src="https://i.imgur.com/06rz0ni.png" className="rounded-full mb-6 border-2 border-white brightness-75 gray-glow-border max-h-72 w-auto" />
           <div className="flex gap-4 text-blue-300">
